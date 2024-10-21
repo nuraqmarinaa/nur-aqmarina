@@ -1,0 +1,21 @@
+# Program untuk menentukan kelulusan mahasiswa
+nilai_ujian = float(input("Masukkan nilai ujian (0-100): "))
+persentase_absensi = float(input("Masukkan persentase kehadiran (0-100): "))
+if nilai_ujian >= 0 and nilai_ujian <= 100 and persentase_absensi >= 0 and persentase_absensi <= 100:
+    if nilai_ujian >= 70:
+        if persentase_absensi >= 80:
+            print("Selamat! Anda lulus dengan baik.")
+        elif persentase_absensi >= 70:
+            print("Anda lulus, tetapi tingkatkan kehadiran Anda.")
+        else:
+            print("Anda tidak lulus karena kehadiran kurang.")
+    elif nilai_ujian >= 60:
+        if persentase_absensi >= 80:
+            print("Anda lulus dengan nilai cukup.")
+        else:
+            print("Anda tidak lulus. Tingkatkan nilai dan kehadiran Anda.")
+    else:
+        print("Anda tidak lulus karena nilai ujian kurang.")
+else:
+    print("Masukan tidak valid. Pastikan nilai dan persentase kehadiran antara 0-100.")
+
