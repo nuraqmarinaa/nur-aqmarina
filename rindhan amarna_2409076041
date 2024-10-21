@@ -1,0 +1,13 @@
+# Minta input pengeluaran dari pengguna
+nominal = float(input("Masukkan nominal pengeluaran: "))
+
+# Tentukan kategori pengeluaran
+if nominal <= 500000:
+    kategori = "Rendah"
+elif nominal <= 1000000:
+    kategori = "Sedang"
+elif nominal <= 2000000:
+    kategori = "Tinggi"
+
+# Tampilkan kategori pengeluaran
+print(f"Kategori pengeluaran: {kategori}")
